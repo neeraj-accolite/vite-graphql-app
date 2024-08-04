@@ -1,16 +1,22 @@
-#profile {
+.container {
+  display: flex;
   background-color: white;
-  width: '100%';
-  height: auto;
-  padding: 20px;
+  border: 1px solid #f3f3f3; /* Light grey */
 }
 
-.users {
+.cartContainer {
+  display: block;
+  background-color: lightgray;
+}
+
+
+.error {
   display: flex;
   background-color: white;
   border: 1px solid #f3f3f3; /* Light grey */
   padding: 10px;
 }
+
 #loader {
   border: 16px solid #f3f3f3; /* Light grey */
   border-top: 16px solid #3498db; /* Blue */

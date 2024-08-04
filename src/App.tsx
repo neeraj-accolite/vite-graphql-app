@@ -1,12 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { createApolloClient } from './libs/apolloClient';
-import {  ProfilePage } from './pages';
+import {  CartPage } from './pages';
 import { ApolloProvider} from '@apollo/client';
 
 export default function Root() {
   const client = createApolloClient();
   return (
     <ApolloProvider client={client}>
-      <ProfilePage />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/cart/:cartId"  Component={CartPage} />
+      </Routes>
+    </BrowserRouter>
     </ApolloProvider>
   );
 }

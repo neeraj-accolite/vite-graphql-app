@@ -1,13 +1,16 @@
 /// <reference types="vite/client" />
-declare module "@acc/api" {
-    export interface Profile {
-        avatar: string;
-        email: string;
+declare module "@types" {
+    export interface CartItemData {
         id: number;
-        first_name: string;
-        last_name: string;
+        name: string;
+        description: string;
+        images: string[];
+        lineTotal: {
+            amount: number;
+        };
+        quantity: number;
+        unitTotal: {
+            amount: number;
+        }
     }
-    export const getAllUsers: () => Promise<{
-        data: Profile[];
-    }>;
 }
