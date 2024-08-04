@@ -3,6 +3,17 @@
   background-color: white;
   border: 1px solid #f3f3f3; /* Light grey */
 }
+.headingCart {
+  display: flex;
+  align-items: center;
+}
+
+.cartLength {
+  font-size: 19px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: darkolivegreen;
+}
 
 .cartContainer {
   display: block;

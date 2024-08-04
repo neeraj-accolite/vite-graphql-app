@@ -14,3 +14,21 @@ declare module "@types" {
         }
     }
 }
+
+declare module "@acc/api" {
+    export interface Order {
+        id: number;
+        title: string;
+        price: number;
+        quantity: number;
+        thumbnail: string;
+    }
+
+    export interface OrderDetail {
+        total: number;
+        products: Order[];
+        totalProducts: number;
+        totalQuantity: number;
+    }
+    const getOrderDetails: (id: number) => Promise<OrderDetail>;
+}

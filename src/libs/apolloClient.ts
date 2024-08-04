@@ -9,13 +9,13 @@ export const createApolloClient = () => {
         defaultOptions: {
             watchQuery: {
                 nextFetchPolicy(currentFetchPolicy) {
-                    // if (currentFetchPolicy == 'network-only' ||
-                    //     currentFetchPolicy == 'cache-and-network'
-                    // ) {
-                    //     // Demote the network policies (except "no-cache") to "cache-first"
-                    //     // after the first request.
-                    //     return 'cache-first';
-                    // }
+                    if (currentFetchPolicy == 'network-only' ||
+                        currentFetchPolicy == 'cache-and-network'
+                    ) {
+                        // Demote the network policies (except "no-cache") to "cache-first"
+                        // after the first request.
+                        return 'cache-first';
+                    }
                     return currentFetchPolicy;
                 }
             }

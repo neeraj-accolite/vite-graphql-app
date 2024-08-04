@@ -1,6 +1,5 @@
 import { QueryResult, useQuery } from "@apollo/client"
-import { GET_PROFILE_LIST_DATA } from "../gql/profileListGql";
-import { useEffect } from "react";
+import { GET_CART_DATA } from "../gql/cartGql";
 
 interface CartResult extends Pick<QueryResult, "loading" | "error" | "refetch"> {
     cart: any;
@@ -8,7 +7,7 @@ interface CartResult extends Pick<QueryResult, "loading" | "error" | "refetch"> 
 
 export function useProfiles(cartId?: string): CartResult {
 
-    const { data, loading, error, refetch } = useQuery(GET_PROFILE_LIST_DATA, {
+    const { data, loading, error, refetch } = useQuery(GET_CART_DATA, {
         variables: {
             id: cartId
         },

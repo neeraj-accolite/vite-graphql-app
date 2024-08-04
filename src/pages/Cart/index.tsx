@@ -3,14 +3,34 @@ import { useProfiles } from '../../hooks/useProfiles';
 import CartItem from '../../components/CartItem';
 import { useParams } from 'react-router-dom';
 import { CartItemData } from '@types';
+import { useState } from 'react';
+import AddProductForm from '../AddProductForm';
 
 export default function CartPage() {
   const params = useParams<{cartId:string}>();
   const {cart, loading, error, refetch} = useProfiles(params.cartId);
-  console.log('aa ',cart?.items);
+  const [showAddProductForm, setShowAddProductForm] = useState<boolean>(false);
+
+  const onAddItem = ()=> {
+    setShowAddProductForm(true);
+  }
+
+  const onCartUpdated = ()=>{
+    refetch();
+  }
+
   return (
     <div id="container">
-      <h1> Shopping Cart </h1>
+      <div className='headingCart'>
+        <h1> Shopping Cart </h1>
+        {
+          cart?.items?.length>0 && 
+            <label className='cartLength'>
+              Total Items In Cart : <b>{cart?.items?.length}</b>
+            </label>
+        }
+        <a href='#add-cart-item' onClick={onAddItem}>Add more item to the cart</a>
+      </div>
       <div>
           {
           loading?
@@ -30,6 +50,7 @@ export default function CartPage() {
           </div>
           }
         </div>
+        {showAddProductForm && <AddProductForm  cartId={params.cartId} onCartUpdated={onCartUpdated}/>}
     </div>
   );
 }

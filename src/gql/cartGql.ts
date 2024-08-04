@@ -1,6 +1,6 @@
 import { gql } from "@apollo/client";
 
-export const GET_PROFILE_LIST_DATA = gql`
+export const GET_CART_DATA = gql`
 query Cart($id: ID!) {
   cart(id: $id){
     id

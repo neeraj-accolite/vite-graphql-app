@@ -27,12 +27,12 @@ export default function CartItem(props: CartItemProps) {
                 </div>
                 <div className='quantityContainer'>
                     <label className='priceLabel'>Price: </label>
-                    <label className='priceVal'> {props.item.unitTotal?.amount}</label>
+                    <label className='priceVal'> ₹ {props.item.unitTotal?.amount}.00</label>
                 </div>
             </div>
             <div className='price'>
                 <label className='priceLabel'>Total Item Price: </label>
-                <label className='priceVal'>{props.item.lineTotal?.amount}</label>
+                <label className='priceVal'>₹ {props.item.lineTotal?.amount}.00</label>
             </div>
         </div>
     )
