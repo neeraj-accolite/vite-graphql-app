@@ -23,13 +23,17 @@ export default function CartPage() {
     <div id="container">
       <div className='headingCart'>
         <h1> Shopping Cart </h1>
-        {
-          cart?.items?.length>0 && 
-            <label className='cartLength'>
-              Total Items In Cart : <b>{cart?.items?.length}</b>
-            </label>
-        }
-        <a href='#add-cart-item' onClick={onAddItem}>Add more item to the cart</a>
+        <div className='cartSummaryContainer'>
+          {
+            cart?.items?.length>0 && 
+              <label className='cartLength'>
+                Total Items In Cart : <b>{cart?.items?.length}</b>
+              </label>
+          }
+        </div>
+        <div className='addBtnCart'>
+          <a href='#add-cart-item' className='addItemBtn' onClick={onAddItem}>⨁ Add more item to the cart</a>
+        </div>
       </div>
       <div>
           {

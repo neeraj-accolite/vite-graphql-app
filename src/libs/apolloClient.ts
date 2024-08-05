@@ -1,11 +1,15 @@
 import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
+import { createFragmentRegistry } from '@apollo/client/cache';
+import { CORE_AMOUNT_FIELDS } from '../gql/amountGqlFragment';
 
 export const createApolloClient = () => {
     const client = new ApolloClient({
         link: new HttpLink({
             uri: 'https://api.cartql.com/', // Replace with your GraphQL endpoint
         }),
-        cache: new InMemoryCache(),
+        cache: new InMemoryCache({
+            fragments: createFragmentRegistry(CORE_AMOUNT_FIELDS)
+        }),
         defaultOptions: {
             watchQuery: {
                 nextFetchPolicy(currentFetchPolicy) {

@@ -5,14 +5,19 @@ import { useAddItem } from '../../hooks/useAddItem';
 
 interface AddProductFormProps {
     cartId?: string;
-    onCartUpdated: ()=>{}
+    onCartUpdated: ()=>void;
 }
 
 export default function AddProductForm(props: AddProductFormProps) {
-    console.warn('inside form');
     const [isLoading, setLoading] = useState<boolean>(true);
     const [orders, setOrders] = useState<OrderDetail | null>(null);
-    const {addItemToCart, data, loading: itemLoading, error } = useAddItem();
+
+    const onItemAddedToCart = ()=> {
+        location.href = '#';
+        props.onCartUpdated();
+    }
+
+    const {addItemToCart } = useAddItem(onItemAddedToCart);
 
     useEffect(()=>{
         setTimeout(async ()=>{
@@ -24,21 +29,7 @@ export default function AddProductForm(props: AddProductFormProps) {
       },[]);
 
     const onAddBtnClicked = (product: Order)=> {
-        addItemToCart({
-            variables: {
-                input: {
-                    cartId:props.cartId,
-                    id:product.id,
-                    name: `${product.title} - Cart Item` ,
-                    description: `This is the description for ${product.title} | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  `,
-                    price: parseInt(``+product.price),
-                    images : product.thumbnail,
-                    quantity: product.quantity
-                }
-              }
-        });
-        location.href = '#';
-        props.onCartUpdated();
+        addItemToCart(product, props.cartId);
     }
 
     return (
@@ -53,38 +44,42 @@ export default function AddProductForm(props: AddProductFormProps) {
                     isLoading?
                     <div id="loader" style={{marginTop:'30px', marginBottom:'30px'}}></div>
                     :
-                    orders?.products && 
-                    orders.products.map(order=>{
-                    return(
-                        <div style={{marginTop:'30px'}} key={order.id}>
-                            <div className='users' >
-                                <div id="detailSection">
-                                    <img src={order?.thumbnail} width={80} height={80} />
-                                </div>
-                                <div>
+                    <div className='scrollBarForm'>
+                    {
+                        orders?.products && 
+                        orders.products.map(order=>{
+                        return(
+                            <div key={order.id}>
+                                <div className='users'>
                                     <div id="detailSection">
-                                        <label id="fieldOrder">Product:
-                                        </label>
-                                        <label id="valueOrder">
-                                        {order?.title}
-                                        </label>
-                                      </div>
-                                    <div id="detailSection">
-                                        <label id="fieldOrder">Quantity:</label> 
-                                        <label id="valueOrder">{order?.quantity}</label>
+                                        <img src={order?.thumbnail} width={80} height={80} />
                                     </div>
-                                    <div id="detailSection">
-                                        <label id="fieldOrder">Price:</label> 
-                                        <label id="valueOrder">{order?.price}</label>
+                                    <div style={{flex:1}}>
+                                        <div id="detailSection">
+                                            <label id="fieldOrder">Product:
+                                            </label>
+                                            <label id="valueOrder">
+                                            {order?.title}
+                                            </label>
+                                        </div>
+                                        <div id="detailSection">
+                                            <label id="fieldOrder">Quantity:</label> 
+                                            <label id="valueOrder">{order?.quantity}</label>
+                                        </div>
+                                        <div id="detailSection">
+                                            <label id="fieldOrder">Price:</label> 
+                                            <label id="valueOrder">{order?.price}</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <button onClick={()=>onAddBtnClicked(order)}>Add Item to The Cart</button>
-                                </div>
-                            </div> 
-                        </div>
-                    )
-                    })
+                                    <div>
+                                        <button className='addToCartBtn' onClick={()=>onAddBtnClicked(order)}>⨁ Add Item</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        )
+                        })
+                    }
+                    </div>
                 }
                 </div>
             </div>

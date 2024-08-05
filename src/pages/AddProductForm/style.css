@@ -6,6 +6,16 @@
     justify-content: center;
 }
 
+.scrollBarForm {
+    margin: 4px, 4px;
+    padding: 4px;
+    background-color: white;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
 .box a {
     padding: 15px;
     background-color: #fff;
@@ -41,6 +51,14 @@
 .modal:target {
     display: flex;
 }
+
+.addToCartBtn{
+    text-decoration: none;
+    color: darkcyan;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #c0bdbd; /* Light grey */
+  }
 
 
 #loader {
@@ -95,4 +113,5 @@
     border: 1px solid #f3f3f3; /* Light grey */
     padding: 10px;
     margin-top: 20px;
+    align-items: center;
   }

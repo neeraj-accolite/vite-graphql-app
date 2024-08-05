@@ -18,10 +18,10 @@ query Cart($id: ID!) {
       description
       quantity
       lineTotal {
-        amount
+        ...CoreAmountFragment
       }
       unitTotal {
-        amount
+        ...CoreAmountFragment
       }
     }
   }

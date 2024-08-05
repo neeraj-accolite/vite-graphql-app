@@ -20,6 +20,24 @@
   background-color: lightgray;
 }
 
+.cartSummaryContainer {
+  display: flex;
+  flex: 1;
+}
+
+.addBtnCart {
+  align-items: end;
+  justify-content: end;
+  margin-right: 5px;
+}
+
+.addItemBtn{
+  text-decoration: none;
+  color: darkcyan;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #c0bdbd; /* Light grey */
+}
 
 .error {
   display: flex;
