@@ -5,7 +5,7 @@ interface CartResult extends Pick<QueryResult, "loading" | "error" | "refetch"> 
     cart: any;
 }
 
-export function useProfiles(cartId?: string): CartResult {
+export function useCart(cartId?: string): CartResult {
 
     const { data, loading, error, refetch } = useQuery(GET_CART_DATA, {
         variables: {

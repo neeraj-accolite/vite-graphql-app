@@ -1,5 +1,5 @@
 import './style.css';
-import { useProfiles } from '../../hooks/useProfiles';
+import { useCart } from '../../hooks/useCart';
 import CartItem from '../../components/CartItem';
 import { useParams } from 'react-router-dom';
 import { CartItemData } from '@types';
@@ -8,7 +8,7 @@ import AddProductForm from '../AddProductForm';
 
 export default function CartPage() {
   const params = useParams<{cartId:string}>();
-  const {cart, loading, error, refetch} = useProfiles(params.cartId);
+  const {cart, loading, error, refetch} = useCart(params.cartId);
   const [showAddProductForm, setShowAddProductForm] = useState<boolean>(false);
 
   const onAddItem = ()=> {
