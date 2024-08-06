@@ -4,7 +4,7 @@ declare module "@types" {
         id: number;
         name: string;
         description: string;
-        images: string[];
+        images: string;
         lineTotal: {
             amount: number;
         };

@@ -5,11 +5,7 @@ query Cart($id: ID!) {
   cart(id: $id){
     id
     grandTotal {
-      amount
-      currency {
-        decimalDigits
-      }
-      formatted
+      ...CoreAmountFragment
     }
     items {
       id

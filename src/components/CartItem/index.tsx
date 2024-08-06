@@ -9,7 +9,7 @@ export default function CartItem(props: CartItemProps) {
     return (
         <div className="container">
             <div className='imageContainer'>
-                <img width={150} height={150} src={props.item.images[0]} />
+                <img width={150} height={150} src={props.item.images} />
             </div>
             <div className='details'>
                 <div className='productName'>

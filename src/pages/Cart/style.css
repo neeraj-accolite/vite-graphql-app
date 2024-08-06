@@ -31,6 +31,20 @@
   margin-right: 5px;
 }
 
+.totalAmountContainer {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  margin-right: 50px;
+}
+
+.totalAmountLabel {
+  font-size: 19px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: rebeccapurple;
+}
+
 .addItemBtn{
   text-decoration: none;
   color: darkcyan;

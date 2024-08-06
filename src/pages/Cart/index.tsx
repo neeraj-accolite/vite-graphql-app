@@ -30,6 +30,14 @@ export default function CartPage() {
                 Total Items In Cart : <b>{cart?.items?.length}</b>
               </label>
           }
+          {
+            cart?.grandTotal?.amount > 0 && 
+            <div className='totalAmountContainer'>
+                <label className='totalAmountLabel'>
+                    Total Cart Amount: <b>{cart?.grandTotal?.formatted}</b>
+                </label>
+              </div>
+          }
         </div>
         <div className='addBtnCart'>
           <a href='#add-cart-item' className='addItemBtn' onClick={onAddItem}>⨁ Add more item to the cart</a>
