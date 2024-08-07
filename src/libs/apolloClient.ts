@@ -1,15 +1,11 @@
-import { ApolloClient, InMemoryCache, HttpLink } from '@apollo/client';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
 import { createFragmentRegistry } from '@apollo/client/cache';
 import { CORE_AMOUNT_FIELDS } from '../gql/amountGqlFragment';
+import { getLinks } from './links';
 
 export const createApolloClient = () => {
     const client = new ApolloClient({
-        link: new HttpLink({
-            uri: 'https://rcbeu6lau5ddbndzu4g7nefngi.appsync-api.us-east-1.amazonaws.com/graphql', // Replace with your GraphQL endpoint
-            headers: {
-                "x-api-key": "da2-p54z72v7tzfkbkwuowrwdgzxpe"
-            }
-        }),
+        link: getLinks(),
         cache: new InMemoryCache({
             fragments: createFragmentRegistry(CORE_AMOUNT_FIELDS)
         }),
