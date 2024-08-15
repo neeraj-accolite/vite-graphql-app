@@ -1,11 +1,11 @@
-import {  CartItemData } from '@types';
 import './style.css';
+import { CartItem } from '../../db/db';
 
-interface CartItemProps{ 
-    item: CartItemData
+interface CartItemProps {
+    item: CartItem
 }
 
-export default function CartItem(props: CartItemProps) {
+export default function CartItemComponent(props: CartItemProps) {
     return (
         <div className="container">
             <div className='imageContainer'>

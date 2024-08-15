@@ -31,6 +31,16 @@
   margin-right: 5px;
 }
 
+.syncCartButton {
+  text-decoration: none;
+  color: darkcyan;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 20px;
+  border: 1px solid #c0bdbd; /* Light grey */
+  cursor: pointer;
+}
+
 .totalAmountContainer {
   display: flex;
   flex: 1;
