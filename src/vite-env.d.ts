@@ -13,6 +13,27 @@ declare module "@types" {
             amount: number;
         }
     }
+
+    export interface ItemAddedToCartResponse {
+        id: string;
+        name: string;
+        description: string;
+        images: string;
+        lineTotal: {
+            amount: number;
+            formatted: string;
+        };
+        quantity: number;
+        unitTotal: {
+            amount: number;
+            formatted: string;
+        },
+        grandTotal: {
+            amount: number;
+            formatted: string;
+        },
+        cartId: string;
+    }
 }
 
 declare module "@acc/api" {

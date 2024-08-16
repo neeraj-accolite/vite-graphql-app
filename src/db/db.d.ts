@@ -16,7 +16,7 @@ export interface CartItem {
     name: string;
     description: string;
     images: string;
-    quantity: string;
+    quantity: number;
     lineTotal: Money;
     unitTotal: Money;
 }

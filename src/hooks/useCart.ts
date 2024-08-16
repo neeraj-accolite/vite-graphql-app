@@ -30,8 +30,14 @@ export function useCart(cartId?: string): CartResult {
         async function fetchCartDetails() {
             if (cartId != null) {
                 const cartDetails = await database.carts.getCart(cartId);
+                cartDetails?.$.subscribe(cart => {
+                    if (!cart) {
+                        return;
+                    }
+                    setCartData(cart);
+                })
                 setCartData(cartDetails);
-                if (cartDetails?.items?.length === 0) {
+                if (!cartDetails?.items) {
                     //Refetch the cart details if there are no items saved.
                     loadData();
                 }

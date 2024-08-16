@@ -18,10 +18,6 @@ export default function CartPage() {
     refetch();
   }
 
-  const onCartUpdated = () => {
-    // refetch();
-  }
-
   return (
     <div id="container">
       <div className='headingCart'>
@@ -66,7 +62,7 @@ export default function CartPage() {
               </div>
         }
       </div>
-      {showAddProductForm && <AddProductForm cartId={params.cartId} onCartUpdated={onCartUpdated} />}
+      {showAddProductForm && <AddProductForm cartId={params.cartId} />}
     </div>
   );
 }

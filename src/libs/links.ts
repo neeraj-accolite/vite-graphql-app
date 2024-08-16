@@ -1,6 +1,6 @@
-import { HttpLink, split } from "@apollo/client";
+import { ApolloLink, from, HttpLink, NextLink, Operation, split } from "@apollo/client";
 import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
-import { getMainDefinition } from "@apollo/client/utilities";
+import { getMainDefinition, omitDeep } from "@apollo/client/utilities";
 import { createClient } from "graphql-ws";
 import awsconfig from './aws-exports';
 
@@ -28,11 +28,23 @@ export function getLinks() {
         }),
     );
 
-    return split(({ query }) => {
+    const networkLinks = split(({ query }) => {
         const definition = getMainDefinition(query);
         return definition.kind === 'OperationDefinition' && definition.operation === 'subscription';
     },
         wsLink,
-        httpLink
-    )
+        httpLink,
+    );
+
+
+    const cleanTypeName = new ApolloLink((operation: Operation, forward: NextLink) => {
+        if (operation.variables) {
+            operation.variables = omitDeep(operation.variables, '__typename');
+        }
+        return forward(operation).map((data) => {
+            return data;
+        });
+    });
+
+    return from([cleanTypeName, networkLinks]);
 }

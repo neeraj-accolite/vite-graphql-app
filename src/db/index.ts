@@ -6,7 +6,7 @@ import { ShoppingAppDbCollections } from "./db";
 export const createDatabaseClient = async () => {
 
     const db = await createRxDatabase<ShoppingAppDbCollections>({
-        name: 'NutrienShoppingAppDatabase',
+        name: 'nutrien-shopping-cart',
         storage: getRxStorageDexie(),
         password: "StrongPassword@98"
     });

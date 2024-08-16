@@ -7,7 +7,8 @@ export const createApolloClient = () => {
     const client = new ApolloClient({
         link: getLinks(),
         cache: new InMemoryCache({
-            fragments: createFragmentRegistry(CORE_AMOUNT_FIELDS)
+            fragments: createFragmentRegistry(CORE_AMOUNT_FIELDS),
+            addTypename: false
         }),
         defaultOptions: {
             watchQuery: {
