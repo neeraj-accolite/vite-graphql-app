@@ -20,7 +20,7 @@ export default function AddProductForm(props: AddProductFormProps) {
     useEffect(() => {
         setTimeout(async () => {
             //set time out added to get the loading effects 
-            const orderData = await getOrderDetails(2);
+            const orderData = await getOrderDetails(Math.floor(Math.random() * 10) + 1);
             setOrders(orderData);
             setLoading(false);
         }, 100);

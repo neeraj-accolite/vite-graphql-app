@@ -1,0 +1,662 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AddProductForm Page > Add Product Form is rendered successfully with products list loaded in the form 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="modal"
+        id="add-cart-item"
+      >
+        <div
+          class="content"
+        >
+          <div>
+            <h2>
+              Add Item in the Cart
+            </h2>
+            <a
+              class="close"
+              href="#"
+            >
+              ×
+            </a>
+          </div>
+          <div>
+            <div
+              class="scrollBarForm"
+              style=""
+            >
+              <div>
+                <div
+                  class="users"
+                >
+                  <div
+                    id="detailSection"
+                  >
+                    <img
+                      height="80"
+                      src="https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
+                      width="80"
+                    />
+                  </div>
+                  <div
+                    style="flex: 1;"
+                  >
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Product:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        Charger SXT RWD
+                      </label>
+                    </div>
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Quantity:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        3
+                      </label>
+                    </div>
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Price:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        32999.99
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="addToCartBtn"
+                    >
+                      ⨁ Add Item
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="users"
+                >
+                  <div
+                    id="detailSection"
+                  >
+                    <img
+                      height="80"
+                      src="https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
+                      width="80"
+                    />
+                  </div>
+                  <div
+                    style="flex: 1;"
+                  >
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Product:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        Apple MacBook Pro 14 Inch Space Grey
+                      </label>
+                    </div>
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Quantity:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        2
+                      </label>
+                    </div>
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Price:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        1999.99
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="addToCartBtn"
+                    >
+                      ⨁ Add Item
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="users"
+                >
+                  <div
+                    id="detailSection"
+                  >
+                    <img
+                      height="80"
+                      src="https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Oval%20Earring/thumbnail.png"
+                      width="80"
+                    />
+                  </div>
+                  <div
+                    style="flex: 1;"
+                  >
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Product:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        Green Oval Earring
+                      </label>
+                    </div>
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Quantity:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        5
+                      </label>
+                    </div>
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Price:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        24.99
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="addToCartBtn"
+                    >
+                      ⨁ Add Item
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="users"
+                >
+                  <div
+                    id="detailSection"
+                  >
+                    <img
+                      height="80"
+                      src="https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png"
+                      width="80"
+                    />
+                  </div>
+                  <div
+                    style="flex: 1;"
+                  >
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Product:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        Apple Airpods
+                      </label>
+                    </div>
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Quantity:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        5
+                      </label>
+                    </div>
+                    <div
+                      id="detailSection"
+                    >
+                      <label
+                        id="fieldOrder"
+                      >
+                        Price:
+                      </label>
+                      <label
+                        id="valueOrder"
+                      >
+                        129.99
+                      </label>
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      class="addToCartBtn"
+                    >
+                      ⨁ Add Item
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="modal"
+      id="add-cart-item"
+    >
+      <div
+        class="content"
+      >
+        <div>
+          <h2>
+            Add Item in the Cart
+          </h2>
+          <a
+            class="close"
+            href="#"
+          >
+            ×
+          </a>
+        </div>
+        <div>
+          <div
+            class="scrollBarForm"
+            style=""
+          >
+            <div>
+              <div
+                class="users"
+              >
+                <div
+                  id="detailSection"
+                >
+                  <img
+                    height="80"
+                    src="https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png"
+                    width="80"
+                  />
+                </div>
+                <div
+                  style="flex: 1;"
+                >
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Product:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      Charger SXT RWD
+                    </label>
+                  </div>
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Quantity:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      3
+                    </label>
+                  </div>
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Price:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      32999.99
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="addToCartBtn"
+                  >
+                    ⨁ Add Item
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="users"
+              >
+                <div
+                  id="detailSection"
+                >
+                  <img
+                    height="80"
+                    src="https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png"
+                    width="80"
+                  />
+                </div>
+                <div
+                  style="flex: 1;"
+                >
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Product:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      Apple MacBook Pro 14 Inch Space Grey
+                    </label>
+                  </div>
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Quantity:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      2
+                    </label>
+                  </div>
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Price:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      1999.99
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="addToCartBtn"
+                  >
+                    ⨁ Add Item
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="users"
+              >
+                <div
+                  id="detailSection"
+                >
+                  <img
+                    height="80"
+                    src="https://cdn.dummyjson.com/products/images/womens-jewellery/Green%20Oval%20Earring/thumbnail.png"
+                    width="80"
+                  />
+                </div>
+                <div
+                  style="flex: 1;"
+                >
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Product:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      Green Oval Earring
+                    </label>
+                  </div>
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Quantity:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      5
+                    </label>
+                  </div>
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Price:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      24.99
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="addToCartBtn"
+                  >
+                    ⨁ Add Item
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="users"
+              >
+                <div
+                  id="detailSection"
+                >
+                  <img
+                    height="80"
+                    src="https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png"
+                    width="80"
+                  />
+                </div>
+                <div
+                  style="flex: 1;"
+                >
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Product:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      Apple Airpods
+                    </label>
+                  </div>
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Quantity:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      5
+                    </label>
+                  </div>
+                  <div
+                    id="detailSection"
+                  >
+                    <label
+                      id="fieldOrder"
+                    >
+                      Price:
+                    </label>
+                    <label
+                      id="valueOrder"
+                    >
+                      129.99
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <button
+                    class="addToCartBtn"
+                  >
+                    ⨁ Add Item
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

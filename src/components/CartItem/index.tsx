@@ -16,7 +16,7 @@ export default function CartItemComponent(props: CartItemProps) {
                     <label>{props.item.name}</label>
                 </div>
                 <div className='stock'>
-                    <label>In stock</label>
+                    <label className='stockLabel'>In stock</label>
                 </div>
                 <div className='description'>
                     <label>{props.item.description}</label>
