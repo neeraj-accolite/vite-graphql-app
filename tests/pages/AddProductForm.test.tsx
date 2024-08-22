@@ -1,4 +1,4 @@
-import { fireEvent, render, waitFor } from "@testing-library/react";
+import { fireEvent, render, waitFor, waitForElementToBeRemoved } from "@testing-library/react";
 import { describe, expect, test, vi } from "vitest";
 import AddProductForm from '../../src/pages/AddProductForm';
 import React from "react";
@@ -34,12 +34,16 @@ describe("AddProductForm Page", () => {
         let loadingElem = await component.findByTestId('loader');
         expect(loadingElem).toBeTruthy();
 
+        await waitForElementToBeRemoved(() => component.queryByTestId('loader'));
+
+        //The loading should have been removed when the data is fetched.
+        let elem = component.queryByTestId('loader');
+        expect(elem).not.toBeTruthy();
+
         //once the mock data is loaded, the Product data should be available in DOM.
         const productElem = await waitFor(() => component.findByText(OrdersData.products[0].title));
         expect(productElem).toBeTruthy();
-        //The loading should be disabled as well.
-        let elem = component.queryByTestId('loader');
-        expect(elem).not.toBeTruthy();
+
 
     });
 
