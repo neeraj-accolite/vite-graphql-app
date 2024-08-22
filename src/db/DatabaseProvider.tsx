@@ -1,23 +1,23 @@
-import {  useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { RxDatabase } from "rxdb";
 import { ShoppingAppDbCollections } from "./db";
 import { DatabaseContext } from "./DatabaseContext";
 import { createDatabaseClient } from ".";
 
 
-export const DatabaseProvider: React.FC<{ children: React.ReactNode }> = ({ children })=> {
+export const DatabaseProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
     const [database, setDatabase] = useState<RxDatabase<ShoppingAppDbCollections> | null>(null);
 
-    useEffect(()=>{
+    useEffect(() => {
         async function initiateDatabaseClient() {
             const db = await createDatabaseClient();
             setDatabase(db);
         }
         initiateDatabaseClient();
-    },[]);
+    }, []);
 
-    if(!database){
+    if (!database) {
         //Database is not yet initialized. 
         return null;
     }

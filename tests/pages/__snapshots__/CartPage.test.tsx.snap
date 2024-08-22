@@ -1,0 +1,1046 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Cart Page > Cart Page is rendered successfully with Cart Mock Data 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        id="container"
+      >
+        <div
+          class="headingCart"
+        >
+          <h1>
+             Shopping Cart 
+          </h1>
+          <div
+            class="cartSummaryContainer"
+          >
+            <label
+              class="cartLength"
+            >
+              Total Items In Cart : 
+              <b>
+                5
+              </b>
+            </label>
+            <div
+              class="totalAmountContainer"
+            >
+              <label
+                class="totalAmountLabel"
+              >
+                Total Cart Amount: 
+                <b>
+                  Rs. 9620
+                </b>
+              </label>
+            </div>
+          </div>
+          <div
+            class="addBtnCart"
+          >
+            <a
+              class="addItemBtn"
+              href="#add-cart-item"
+            >
+              ⨁ Add more item to the cart
+            </a>
+            <button
+              class="syncCartButton"
+            >
+              Sync Cart
+            </button>
+          </div>
+        </div>
+        <div>
+          <div
+            class="cartContainer"
+          >
+            <div
+              class="container"
+            >
+              <div
+                class="imageContainer"
+              >
+                <img
+                  height="150"
+                  src="https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Lamp%20with%20iPhone/thumbnail.png"
+                  width="150"
+                />
+              </div>
+              <div
+                class="details"
+              >
+                <div
+                  class="productName"
+                >
+                  <label>
+                    Selfie Lamp with iPhone - Cart Item
+                  </label>
+                </div>
+                <div
+                  class="stock"
+                >
+                  <label
+                    class="stockLabel"
+                  >
+                    In stock
+                  </label>
+                </div>
+                <div
+                  class="description"
+                >
+                  <label>
+                    This is the description for Selfie Lamp with iPhone | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="quantityLabel"
+                  >
+                    Quantity: 
+                  </label>
+                  <label
+                    class="quantityVal"
+                  >
+                     
+                    5
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="priceLabel"
+                  >
+                    Price: 
+                  </label>
+                  <label
+                    class="priceVal"
+                  >
+                     ₹ 
+                    14
+                    .00
+                  </label>
+                </div>
+              </div>
+              <div
+                class="price"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Total Item Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                  ₹ 
+                  70
+                  .00
+                </label>
+              </div>
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="imageContainer"
+              >
+                <img
+                  height="150"
+                  src="https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Helmet/thumbnail.png"
+                  width="150"
+                />
+              </div>
+              <div
+                class="details"
+              >
+                <div
+                  class="productName"
+                >
+                  <label>
+                    Cricket Helmet - Cart Item
+                  </label>
+                </div>
+                <div
+                  class="stock"
+                >
+                  <label
+                    class="stockLabel"
+                  >
+                    In stock
+                  </label>
+                </div>
+                <div
+                  class="description"
+                >
+                  <label>
+                    This is the description for Cricket Helmet | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="quantityLabel"
+                  >
+                    Quantity: 
+                  </label>
+                  <label
+                    class="quantityVal"
+                  >
+                     
+                    4
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="priceLabel"
+                  >
+                    Price: 
+                  </label>
+                  <label
+                    class="priceVal"
+                  >
+                     ₹ 
+                    44
+                    .00
+                  </label>
+                </div>
+              </div>
+              <div
+                class="price"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Total Item Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                  ₹ 
+                  176
+                  .00
+                </label>
+              </div>
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="imageContainer"
+              >
+                <img
+                  height="150"
+                  src="https://cdn.dummyjson.com/products/images/sports-accessories/Golf%20Ball/thumbnail.png"
+                  width="150"
+                />
+              </div>
+              <div
+                class="details"
+              >
+                <div
+                  class="productName"
+                >
+                  <label>
+                    Golf Ball - Cart Item
+                  </label>
+                </div>
+                <div
+                  class="stock"
+                >
+                  <label
+                    class="stockLabel"
+                  >
+                    In stock
+                  </label>
+                </div>
+                <div
+                  class="description"
+                >
+                  <label>
+                    This is the description for Golf Ball | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="quantityLabel"
+                  >
+                    Quantity: 
+                  </label>
+                  <label
+                    class="quantityVal"
+                  >
+                     
+                    4
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="priceLabel"
+                  >
+                    Price: 
+                  </label>
+                  <label
+                    class="priceVal"
+                  >
+                     ₹ 
+                    9
+                    .00
+                  </label>
+                </div>
+              </div>
+              <div
+                class="price"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Total Item Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                  ₹ 
+                  36
+                  .00
+                </label>
+              </div>
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="imageContainer"
+              >
+                <img
+                  height="150"
+                  src="https://cdn.dummyjson.com/products/images/smartphones/iPhone%20X/thumbnail.png"
+                  width="150"
+                />
+              </div>
+              <div
+                class="details"
+              >
+                <div
+                  class="productName"
+                >
+                  <label>
+                    iPhone X - Cart Item
+                  </label>
+                </div>
+                <div
+                  class="stock"
+                >
+                  <label
+                    class="stockLabel"
+                  >
+                    In stock
+                  </label>
+                </div>
+                <div
+                  class="description"
+                >
+                  <label>
+                    This is the description for iPhone X | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="quantityLabel"
+                  >
+                    Quantity: 
+                  </label>
+                  <label
+                    class="quantityVal"
+                  >
+                     
+                    4
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="priceLabel"
+                  >
+                    Price: 
+                  </label>
+                  <label
+                    class="priceVal"
+                  >
+                     ₹ 
+                    899
+                    .00
+                  </label>
+                </div>
+              </div>
+              <div
+                class="price"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Total Item Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                  ₹ 
+                  3596
+                  .00
+                </label>
+              </div>
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="imageContainer"
+              >
+                <img
+                  height="150"
+                  src="https://cdn.dummyjson.com/products/images/smartphones/iPhone%206/thumbnail.png"
+                  width="150"
+                />
+              </div>
+              <div
+                class="details"
+              >
+                <div
+                  class="productName"
+                >
+                  <label>
+                    iPhone 6 - Cart Item
+                  </label>
+                </div>
+                <div
+                  class="stock"
+                >
+                  <label
+                    class="stockLabel"
+                  >
+                    In stock
+                  </label>
+                </div>
+                <div
+                  class="description"
+                >
+                  <label>
+                    This is the description for iPhone 6 | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="quantityLabel"
+                  >
+                    Quantity: 
+                  </label>
+                  <label
+                    class="quantityVal"
+                  >
+                     
+                    3
+                  </label>
+                </div>
+                <div
+                  class="quantityContainer"
+                >
+                  <label
+                    class="priceLabel"
+                  >
+                    Price: 
+                  </label>
+                  <label
+                    class="priceVal"
+                  >
+                     ₹ 
+                    299
+                    .00
+                  </label>
+                </div>
+              </div>
+              <div
+                class="price"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Total Item Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                  ₹ 
+                  897
+                  .00
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      id="container"
+    >
+      <div
+        class="headingCart"
+      >
+        <h1>
+           Shopping Cart 
+        </h1>
+        <div
+          class="cartSummaryContainer"
+        >
+          <label
+            class="cartLength"
+          >
+            Total Items In Cart : 
+            <b>
+              5
+            </b>
+          </label>
+          <div
+            class="totalAmountContainer"
+          >
+            <label
+              class="totalAmountLabel"
+            >
+              Total Cart Amount: 
+              <b>
+                Rs. 9620
+              </b>
+            </label>
+          </div>
+        </div>
+        <div
+          class="addBtnCart"
+        >
+          <a
+            class="addItemBtn"
+            href="#add-cart-item"
+          >
+            ⨁ Add more item to the cart
+          </a>
+          <button
+            class="syncCartButton"
+          >
+            Sync Cart
+          </button>
+        </div>
+      </div>
+      <div>
+        <div
+          class="cartContainer"
+        >
+          <div
+            class="container"
+          >
+            <div
+              class="imageContainer"
+            >
+              <img
+                height="150"
+                src="https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Lamp%20with%20iPhone/thumbnail.png"
+                width="150"
+              />
+            </div>
+            <div
+              class="details"
+            >
+              <div
+                class="productName"
+              >
+                <label>
+                  Selfie Lamp with iPhone - Cart Item
+                </label>
+              </div>
+              <div
+                class="stock"
+              >
+                <label
+                  class="stockLabel"
+                >
+                  In stock
+                </label>
+              </div>
+              <div
+                class="description"
+              >
+                <label>
+                  This is the description for Selfie Lamp with iPhone | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="quantityLabel"
+                >
+                  Quantity: 
+                </label>
+                <label
+                  class="quantityVal"
+                >
+                   
+                  5
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                   ₹ 
+                  14
+                  .00
+                </label>
+              </div>
+            </div>
+            <div
+              class="price"
+            >
+              <label
+                class="priceLabel"
+              >
+                Total Item Price: 
+              </label>
+              <label
+                class="priceVal"
+              >
+                ₹ 
+                70
+                .00
+              </label>
+            </div>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="imageContainer"
+            >
+              <img
+                height="150"
+                src="https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Helmet/thumbnail.png"
+                width="150"
+              />
+            </div>
+            <div
+              class="details"
+            >
+              <div
+                class="productName"
+              >
+                <label>
+                  Cricket Helmet - Cart Item
+                </label>
+              </div>
+              <div
+                class="stock"
+              >
+                <label
+                  class="stockLabel"
+                >
+                  In stock
+                </label>
+              </div>
+              <div
+                class="description"
+              >
+                <label>
+                  This is the description for Cricket Helmet | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="quantityLabel"
+                >
+                  Quantity: 
+                </label>
+                <label
+                  class="quantityVal"
+                >
+                   
+                  4
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                   ₹ 
+                  44
+                  .00
+                </label>
+              </div>
+            </div>
+            <div
+              class="price"
+            >
+              <label
+                class="priceLabel"
+              >
+                Total Item Price: 
+              </label>
+              <label
+                class="priceVal"
+              >
+                ₹ 
+                176
+                .00
+              </label>
+            </div>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="imageContainer"
+            >
+              <img
+                height="150"
+                src="https://cdn.dummyjson.com/products/images/sports-accessories/Golf%20Ball/thumbnail.png"
+                width="150"
+              />
+            </div>
+            <div
+              class="details"
+            >
+              <div
+                class="productName"
+              >
+                <label>
+                  Golf Ball - Cart Item
+                </label>
+              </div>
+              <div
+                class="stock"
+              >
+                <label
+                  class="stockLabel"
+                >
+                  In stock
+                </label>
+              </div>
+              <div
+                class="description"
+              >
+                <label>
+                  This is the description for Golf Ball | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="quantityLabel"
+                >
+                  Quantity: 
+                </label>
+                <label
+                  class="quantityVal"
+                >
+                   
+                  4
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                   ₹ 
+                  9
+                  .00
+                </label>
+              </div>
+            </div>
+            <div
+              class="price"
+            >
+              <label
+                class="priceLabel"
+              >
+                Total Item Price: 
+              </label>
+              <label
+                class="priceVal"
+              >
+                ₹ 
+                36
+                .00
+              </label>
+            </div>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="imageContainer"
+            >
+              <img
+                height="150"
+                src="https://cdn.dummyjson.com/products/images/smartphones/iPhone%20X/thumbnail.png"
+                width="150"
+              />
+            </div>
+            <div
+              class="details"
+            >
+              <div
+                class="productName"
+              >
+                <label>
+                  iPhone X - Cart Item
+                </label>
+              </div>
+              <div
+                class="stock"
+              >
+                <label
+                  class="stockLabel"
+                >
+                  In stock
+                </label>
+              </div>
+              <div
+                class="description"
+              >
+                <label>
+                  This is the description for iPhone X | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="quantityLabel"
+                >
+                  Quantity: 
+                </label>
+                <label
+                  class="quantityVal"
+                >
+                   
+                  4
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                   ₹ 
+                  899
+                  .00
+                </label>
+              </div>
+            </div>
+            <div
+              class="price"
+            >
+              <label
+                class="priceLabel"
+              >
+                Total Item Price: 
+              </label>
+              <label
+                class="priceVal"
+              >
+                ₹ 
+                3596
+                .00
+              </label>
+            </div>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="imageContainer"
+            >
+              <img
+                height="150"
+                src="https://cdn.dummyjson.com/products/images/smartphones/iPhone%206/thumbnail.png"
+                width="150"
+              />
+            </div>
+            <div
+              class="details"
+            >
+              <div
+                class="productName"
+              >
+                <label>
+                  iPhone 6 - Cart Item
+                </label>
+              </div>
+              <div
+                class="stock"
+              >
+                <label
+                  class="stockLabel"
+                >
+                  In stock
+                </label>
+              </div>
+              <div
+                class="description"
+              >
+                <label>
+                  This is the description for iPhone 6 | Full BlackGreen Soul® Jupiter Pro | Office Chair | High Back Mesh Ergonomic Home Office Desk Chair  
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="quantityLabel"
+                >
+                  Quantity: 
+                </label>
+                <label
+                  class="quantityVal"
+                >
+                   
+                  3
+                </label>
+              </div>
+              <div
+                class="quantityContainer"
+              >
+                <label
+                  class="priceLabel"
+                >
+                  Price: 
+                </label>
+                <label
+                  class="priceVal"
+                >
+                   ₹ 
+                  299
+                  .00
+                </label>
+              </div>
+            </div>
+            <div
+              class="price"
+            >
+              <label
+                class="priceLabel"
+              >
+                Total Item Price: 
+              </label>
+              <label
+                class="priceVal"
+              >
+                ₹ 
+                897
+                .00
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

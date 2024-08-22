@@ -1,4 +1,4 @@
-import { configure, fireEvent, render, waitFor } from "@testing-library/react";
+import { fireEvent, render, waitFor } from "@testing-library/react";
 import { describe, expect, test, vi } from "vitest";
 import AddProductForm from '../../src/pages/AddProductForm';
 import React from "react";
@@ -7,15 +7,6 @@ import { DatabaseProvider } from '../../src/db/DatabaseProvider';
 import OrdersData from '../__mocks__/ordersData.json';
 
 describe("AddProductForm Page", () => {
-
-    configure({ testIdAttribute: 'id' })
-    vi.mock("@acc/api", () => {
-        return {
-            getOrderDetails: (id: number) => new Promise((resolve, reject) => {
-                resolve(OrdersData);
-            })
-        }
-    });
 
     const AddProductFormComponent = () => (
         <MockedProvider addTypename={false}>
