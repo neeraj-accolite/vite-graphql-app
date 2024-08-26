@@ -9,6 +9,17 @@ export default defineConfig({
     }
   },
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      input: "src/acc-graphqlapp.ts",
+      preserveEntrySignatures: "exports-only",
+      output: {
+        exports: "auto",
+        format: "systemjs",
+        entryFileNames: "[name].js",
+      },
+    },
+  },
   server: {
     host: "localhost",
     port: 5176
