@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x, 20.x]
+        node-version: [20.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v4
@@ -38,7 +38,7 @@ jobs:
     - name: Save the artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: graphql-root
+        name: graphql-root1
         path: .
   build-test:
     needs: setup
@@ -47,7 +47,7 @@ jobs:
     - name: Download the artifacts
       uses: actions/download-artifact@v4
       with: 
-        name: graphql-root
+        name: graphql-root1
 
     - name: List files in the repository
       run: |
