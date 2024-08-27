@@ -26,10 +26,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: Save the artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: graphql-root
+        path: .
   build:
     needs: setup
     runs-on: ubuntu-latest
     steps:
+    - name: Download the artifacts
+      uses: actions/download-artifact@v4
+      with: 
+        name: graphql-root
     - name: List files in the repository
       run: |
         ls ${{ github.workspace }}
