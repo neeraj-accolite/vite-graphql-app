@@ -28,9 +28,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - name: Install dependencies
-      run: npm ci
-
     - name: List files in the repository
       run: |
         ls ${{ github.workspace }}
@@ -48,6 +45,9 @@ jobs:
       uses: actions/download-artifact@v4
       with: 
         name: graphql-root1
+        
+    - name: Install dependencies
+      run: npm ci
 
     - name: List files in the repository
       run: |
