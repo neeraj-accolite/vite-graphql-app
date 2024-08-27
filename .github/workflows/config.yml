@@ -36,6 +36,7 @@ jobs:
       run: |
         ls ${{ github.workspace }}
   test:
+    if: ${{ always() }}
     needs: build
     runs-on: ubuntu-latest
     steps:
