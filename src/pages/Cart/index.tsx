@@ -26,7 +26,7 @@ export default function CartPage() {
           {
             (cart?.items?.length || 0) > 0 &&
             <label className='cartLength'>
-              Total Items In Cart: <b>{cart?.items?.length}</b>
+              Total Items In Cart : <b>{cart?.items?.length}</b>
             </label>
           }
           {
