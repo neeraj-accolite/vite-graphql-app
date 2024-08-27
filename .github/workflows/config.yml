@@ -14,6 +14,7 @@ on:
         - labeled
 jobs:
   setup:
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -26,12 +27,20 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: List files in the repository
+      run: |
+        ls ${{ github.workspace }}
+        
     - name: Save the artifacts
       uses: actions/upload-artifact@v4
       with:
         name: graphql-root
         path: .
-  build:
+  build-test:
     needs: setup
     runs-on: ubuntu-latest
     steps:
@@ -39,23 +48,16 @@ jobs:
       uses: actions/download-artifact@v4
       with: 
         name: graphql-root
+
     - name: List files in the repository
       run: |
-        ls ${{ github.workspace }}
-    - name: Install dependencies
-      run: npm ci
-    - name: List files in the repository
-      run: |
-        ls ${{ github.workspace }}
-  test:
-    if: ${{ always() }}
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
+        ls ${{ github.workspace }}    
+
     - run: npm run build --if-present
     - run: npm test
   prod:
     if: github.repository == 'production'
+    needs: build-test
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v4
