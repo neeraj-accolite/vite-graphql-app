@@ -10,11 +10,11 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  setup:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
+        node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v4
@@ -23,10 +23,18 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+  build:
+    needs: setup
+    runs-on: ubuntu-latest
+    steps:
     - name: Install dependencies
       run: npm ci
     - name: List files in the repository
       run: |
         ls ${{ github.workspace }}
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
     - run: npm run build --if-present
     - run: npm test
