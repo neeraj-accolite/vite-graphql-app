@@ -76,7 +76,7 @@ export default function AddProductForm(props: AddProductFormProps) {
                             className="addToCartBtn"
                             onClick={() => onAddBtnClicked(order)}
                           >
-                            ⨁ Add Items
+                            ⨁ Add Item
                           </button>
                         </div>
                       </div>
